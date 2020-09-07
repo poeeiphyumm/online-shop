@@ -42,6 +42,26 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    protected function authenticated(Request $request, $user)
+    {
+        //User role
+        $roles =$user->getRoleNames();
+
+        //check user role
+        switch ($roles[0]) {
+            case 'Admin':
+                return redirect('dashboard');
+                break;
+            case 'Customer':
+               return redirect('shoppingcart');
+                break;
+            
+            default:
+                return redirect('/');
+                break;
+        }
+            }
+
     /**
      * Get a validator for an incoming registration request.
      *

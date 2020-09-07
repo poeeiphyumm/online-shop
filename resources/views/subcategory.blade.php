@@ -6,7 +6,7 @@
 
 <div class="jumbotron jumbotron-fluid subtitle">
   		<div class="container">
-    		<h1 class="text-center text-white"> Subcategory name </h1>
+    		<h1 class="text-center text-white"> Subcategory name :{{ $subcategory->name }}</h1>
   		</div>
 	</div>
 	
@@ -57,8 +57,9 @@
 
 				<div class="row">
 					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+						@foreach($subcategories as $subcategory)
 						<div class="card pad15 mb-3">
-						  	<img src="image/item/saisai_one.jpg" class="card-img-top" alt="...">
+						  	<img src="{{ asset($subcategory->photo) }}" class="card-img-top" alt="...">
 						  	
 						  	<div class="card-body text-center">
 						    	<h5 class="card-title text-truncate">Card title</h5>
@@ -81,138 +82,10 @@
 								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
 						  	</div>
 						</div>
+						@endforeach
 					</div>
 
-					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-						<div class="card pad15 mb-3">
-						  	<img src="image/item/giordano_one.jpg" height="800" width="800" class="card-img-top" alt="...">
-						  	
-						  	<div class="card-body text-center">
-						    	<h5 class="card-title text-truncate">Card title</h5>
-						    	
-						    	<p class="item-price">
-		                        	<span class="d-block">230,000 Ks</span>
-		                        </p>
-
-		                        <div class="star-rating">
-									<ul class="list-inline">
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star-half' ></i></li>
-									</ul>
-								</div>
-
-								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
-						  	</div>
-						</div>
-					</div>
-
-					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-						<div class="card pad15 mb-3">
-						  	<img src="image/item/apple_one.jpg" height="684" width="416" class="card-img-top" alt="...">
-						  	
-						  	<div class="card-body text-center">
-						    	<h5 class="card-title text-truncate">Card title</h5>
-						    	
-						    	<p class="item-price">
-		                        	<span class="d-block">230,000 Ks</span>
-		                        </p>
-
-		                        <div class="star-rating">
-									<ul class="list-inline">
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star-half' ></i></li>
-									</ul>
-								</div>
-
-								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
-						  	</div>
-						</div>
-					</div>
-
-					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-						<div class="card pad15 mb-3">
-						  	<img src="image/item/saisai_two.jpg" class="card-img-top" alt="...">
-						  	
-						  	<div class="card-body text-center">
-						    	<h5 class="card-title text-truncate">Card title</h5>
-						    	
-						    	<p class="item-price">
-		                        	<strike>250,000 Ks </strike> 
-		                        	<span class="d-block">230,000 Ks</span>
-		                        </p>
-
-		                        <div class="star-rating">
-									<ul class="list-inline">
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star-half' ></i></li>
-									</ul>
-								</div>
-
-								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
-						  	</div>
-						</div>
-					</div>
-
-					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-						<div class="card pad15 mb-3">
-						  	<img src="image/item/giordano_two.jpg" height="800" width="800" class="card-img-top" alt="...">
-						  	
-						  	<div class="card-body text-center">
-						    	<h5 class="card-title text-truncate">Card title</h5>
-						    	
-						    	<p class="item-price">
-		                        	<span class="d-block">230,000 Ks</span>
-		                        </p>
-
-		                        <div class="star-rating">
-									<ul class="list-inline">
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star-half' ></i></li>
-									</ul>
-								</div>
-
-								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
-						  	</div>
-						</div>
-					</div>
-
-					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-						<div class="card pad15 mb-3">
-						  	<img src="image/item/apple_two.png" height="684" width="416" class="card-img-top" alt="...">
-						  	
-						  	<div class="card-body text-center">
-						    	<h5 class="card-title text-truncate">Card title</h5>
-						    	
-						    	<p class="item-price">
-		                        	<span class="d-block">230,000 Ks</span>
-		                        </p>
-
-		                        <div class="star-rating">
-									<ul class="list-inline">
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star' ></i></li>
-										<li class="list-inline-item"><i class='bx bxs-star-half' ></i></li>
-									</ul>
-								</div>
-
-								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
-						  	</div>
-						</div>
-					</div>
+					
 
 				</div>
 

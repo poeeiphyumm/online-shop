@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Route;
 use App\Item;
+use App\Brand;
+use App\Subcategory;
+use DB;
 
 
 class PageController extends Controller
@@ -13,17 +16,19 @@ class PageController extends Controller
     public function mainfun($value='')
     {
         $items=Item::all();
-        return view('main',compact('items'));
+        $brands=Brand::all();
+        $subcategories=Subcategory::all();
+        return view('main',compact('items','brands','subcategories'));
     }
-    public function brandfun($value='')
+    public function brandfun($id)
     {
-
-    	return view('brand');
+        $brand = Brand::find($id);
+    	return view('brand',compact('brand'));
     }
-     public function itemdetailfun($value='')
+     public function itemdetailfun($id)
     {
-
-        return view('itemdetail');
+        $item=Item::find($id);
+        return view('itemdetail',compact('item'));
     }
     public function loginfun($value='')
     {
@@ -32,8 +37,9 @@ class PageController extends Controller
     }
      public function promotionfun($value='')
     {
-
-        return view('promotion');
+        
+        $items = DB::table('items')->where('discount','>',0)->get();
+        return view('promotion',compact('items'));
     }
      public function registerfun($value='')
     {
@@ -46,10 +52,10 @@ class PageController extends Controller
         return view('shoppingcart');
     }
      
-    public function subcategoryfun($value='')
-    {
-
-        return view('subcategory');
+    public function subcategoryfun($id)
+    {   
+        $subcategory =Subcategory::find($id);
+        return view('subcategory',compact('subcategory'));
     }
      
 

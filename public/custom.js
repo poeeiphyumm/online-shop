@@ -45,7 +45,8 @@ $(document).ready(function () {
       }
       localStorage.setItem('cart',JSON.stringify(cart));
 
-      // getData();
+      getData();
+      update_cart_count();
   })
     function getData(){
         var mycart = localStorage.getItem('cart');
@@ -102,6 +103,8 @@ $(document).ready(function () {
               cart.splice(index,1);
               localStorage.setItem('cart',JSON.stringify(cart));
              getData();
+
+             update_cart_count();
             })
             
 
@@ -144,6 +147,7 @@ $(document).ready(function () {
               })
               localStorage.setItem('cart',JSON.stringify(cart));
               getData();
+              update_cart_count();
 
             })
           
@@ -158,17 +162,17 @@ $(document).ready(function () {
           var total=0;
         $.each(mycart_obj,function (i,v) {
           // console.log(i,v);
-          total+=v.qty;
+          total+=parseInt(v.qty);
+          console.log(total);
         })
-        $(".cart_item_count").html(total);
+        $(".item_cart_count").html(total);
       }else{
-        $(".cart_item_count").html(0);
+        $(".item_cart_count").html(0);
       }
-      //  က အောင်မြင်တာ ပြပီး bag ထဲက ၀ ဖြစ်ေအာင်လုပ်တာ
      }else{
-      $(".cart_item_count").html(0);
+      $(".item_cart_count").html(0);
      }
-     //
+     
     }
 
 

@@ -5,7 +5,7 @@
 
 <div class="jumbotron jumbotron-fluid subtitle">
   		<div class="container">
-    		<h1 class="text-center text-white"> Promotion Item </h1>
+    		<h1 class="text-center text-white"> Promotion Item  </h1>
   		</div>
 	</div>
 	
@@ -24,10 +24,11 @@
                 </div>
                 <div class="bbb_viewed_slider_container">
                     <div class="owl-carousel owl-theme bbb_viewed_slider">
+                    	@foreach($items as $item )
 					    <div class="owl-item">
 					        <div class="bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
 					            <div class="pad15">
-					        		<img src="image/item/saisai_one.jpg" class="img-fluid">
+					        		<img src="{{ asset($item->photo) }}" class="img-fluid">
 					            	<p class="text-truncate">Multi Item Carousel</p>
 					            	<p class="item-price">
 					            		<strike>250,000 Ks </strike> 
@@ -48,8 +49,8 @@
 					        	</div>
 					        </div>
 					    </div>
-
-					    <div class="owl-item">
+					    @endforeach
+					    {{-- <div class="owl-item">
 					        <div class="bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
 					            <div class="pad15">
 					            	<img src="image/item/saisai_three.jpg" class="img-fluid">
@@ -330,7 +331,7 @@
 
 					            </div>
 					        </div>
-					    </div>
+					    </div> --}}
 
 					</div>
                 </div>

@@ -6,7 +6,7 @@
 
 	<div class="jumbotron jumbotron-fluid subtitle">
   		<div class="container">
-    		<h1 class="text-center text-white"> Code Number </h1>
+    		<h1 class="text-center text-white"> Code Number : {{ $item->codeno }}</h1>
   		</div>
 	</div>
 	
@@ -33,13 +33,13 @@
 
 		<div class="row mt-5">
 			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-				<img src="image/item/saisai_one.jpg" class="img-fluid">
+				<img src="{{asset($item->photo) }}" class="img-fluid">
 			</div>	
 
 
 			<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
 				
-				<h4> Item Name </h4>
+				<h4> Item Name : {{ $item->name }}</h4>
 
 				<div class="star-rating">
 					<ul class="list-inline">
@@ -62,12 +62,12 @@
 
 				<p> 
 					<span class="text-uppercase "> Current Price : </span>
-					<span class="maincolor ml-3 font-weight-bolder"> 180,000 Ks </span>
+					<span class="maincolor ml-3 font-weight-bolder"> {{ $item->price }} Ks </span>
 				</p>
 
 				<p> 
 					<span class="text-uppercase "> Brand : </span>
-					<span class="ml-3"> <a href="" class="text-decoration-none text-muted"> Brand Name </a> </span>
+					<span class="ml-3"> <a href="" class="text-decoration-none text-muted"> {{ $item->brand->name }} </a> </span>
 				</p>
 
 
@@ -87,25 +87,25 @@
 
 			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
 				<a href="">
-					<img src="image/item/saisai_two.jpg" class="img-fluid">
+					<img src="{{ asset('image/item/saisai_two.jpg') }}" class="img-fluid">
 				</a>
 			</div>
 
 			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
 				<a href="">
-					<img src="image/item/saisai_three.jpg" class="img-fluid">
+					<img src="{{ asset('image/item/saisai_three.jpg') }}" class="img-fluid">
 				</a>
 			</div>
 
 			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
 				<a href="">
-					<img src="image/item/saisai_four.jpg" class="img-fluid">
+					<img src="{{ asset('image/item/saisai_four.jpg') }}" class="img-fluid">
 				</a>
 			</div>
 
 			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
 				<a href="">
-					<img src="image/item/saisai_four.jpg" class="img-fluid">
+					<img src="{{ asset('image/item/saisai_four.jpg') }}" class="img-fluid">
 				</a>
 			</div>
 		</div>

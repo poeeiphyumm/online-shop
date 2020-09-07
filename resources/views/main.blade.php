@@ -116,6 +116,7 @@
 
 		            	@foreach($items as $item)
 		                <div class="item">
+		                	<a href="{{ route('itemdetailpage',$item->id) }}">
 		                    <div class="pad15">
 		                    	<img src="{{ asset($item->photo) }}" class="img-fluid">
 		                        <p class="text-truncate">{{ $item->name }}</p>
@@ -139,7 +140,9 @@
 
 
 		                    </div>
+		                    </a>
 		                </div>
+
 		                @endforeach
 		                
 		                
@@ -738,59 +741,15 @@
 
 	    <!-- Brand Store Item -->
 	    <section class="customer-logos slider mt-5">
+	    	@foreach($brands as $brand)
 	      	<div class="slide">
-	      		<a href="">
-		      		<img src="image/brand/loacker_logo.jpg">
+	      		<a href="{{ route('brandpage',$brand->id) }}">
+	      			<p>{{ $brand->name }}</p>
+		      		<img src="{{ asset($brand->photo) }}" width="100px" height="150px">
 		      	</a>
 	      	</div>
 	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/lockandlock_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/apple_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/giordano_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/saisai_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/brands_logo.png">
-	      		</a>	
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/acer_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/bella_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/ariel_logo.png">
-	      		</a>
-	      	</div>
+	      	@endforeach
 	   	</section>
 
 	    <div class="whitespace d-xl-block d-lg-block d-md-none d-sm-none d-none"></div>

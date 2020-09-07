@@ -10,36 +10,36 @@
 	<title> Shopules </title>
 
 	<!-- Favicon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('favicon/apple-icon-57x57.png') }}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('favicon/apple-icon-60x60.png') }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('favicon/apple-icon-72x72.png') }}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('favicon/apple-icon-76x76.png') }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('favicon/apple-icon-114x114.png') }}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('favicon/apple-icon-120x120.png') }}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('favicon/apple-icon-144x144.png') }}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('favicon/apple-icon-152x152.png') }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-icon-180x180.png') }}">
+	<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('favicon/android-icon-192x192.png') }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicon/favicon-96x96.png') }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
 
     <!-- iconfont CSS -->
-    <link rel="stylesheet" type="text/css" href="../icon/icofont/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('icon/icofont/icofont.min.css') }}">
 	<!-- Boxicon CSS -->
-    <link rel="stylesheet" type="text/css" href="../icon/boxicons-master/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('icon/boxicons-master/css/boxicons.min.css') }}">
     
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" type="text/css" href="css/font.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/media_query.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/font.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/media_query.css') }}">
     
     <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
 
     <!-- OWL CAROUSEL -->
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
 
 </head>
 <body>
@@ -76,46 +76,26 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-10">
-						{{-- <a href="" class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right"> {{ Auth::user()->name }} </a> --}}
+						<a href="login" class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right"> Login/SignUp{{-- {{ Auth::user()->name }} --}} </a>
 
-					<div class="dropdown d-inline-block">
-          				<a class="nav-link text-decoration-none text-dark font-weight-bold d-block" href="{{ route('login') }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          	<span class="mr-2"> {{ Auth::user()->name }} </span>
-						<i class="icofont-rounded-down pt-2"></i>
+					{{-- <div class="dropdown d-inline-block">
+          				<a class="nav-link text-decoration-none text-dark font-weight-bold d-block" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          					{{ Auth::user()->name }}
+ --}}			          	
+						{{-- <i class="icofont-rounded-down pt-2"></i>
 
-			        </a>
-			        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			        	</a> --}}
+			        	{{-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 			          	
-			          		<a class="dropdown-item" href="" >
-			          			{{ __('Logout') }}
+			          		<a class="dropdown-item" href="{{ route('register') }}" > Logout
+			          			
 			          		</a>
 			          	
-			         </ul>
-			    </div>
+			         	</ul> --}}
+			    	{{-- </div> --}}
+ 
 
-
-			    {{-- @guest
-			    	<li class="nav-item">
-			    		<a class ="nav-link" href="{{ route('login') }}">{{ __('login') }}</a>
-			    	</li>
-			    	@if(Route::has('register'))
-			    		<li class="nav-item">
-			    			<a href="{{ route('register') }}" class="nav-link"></a>
-			    		</li>
-			    	@endif
-			    @else 
-			    	<li class="nav-item dropdown">
-			    		<a id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    			{{ Auth::user()->name }}
-			    		</a>
-
-			    		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-			    			<a class="dropdown-item" href="{{ ('logout') }}" oncancel="event.preventDefault(); document.getElementById('logout-form').submit();">
-			    				{{ __('logout') --}}
-			    			{{-- </a>
-			    		</div>
-			    	</li>
-						@endguest --}}
+			    
 					</div>
 
 				</div>
@@ -129,18 +109,16 @@
 					<i class="icofont-search"></i>
 				</div>
 
-				<a href="{{ asset('shoppingcart') }}" class="text-decoration-none d-xl-inline d-lg-inline d-md-inline d-sm-none d-none shoppingcartLink"> 
+				<a href="shoppingcart" class="text-decoration-none d-xl-inline d-lg-inline d-md-inline d-sm-none d-none shoppingcartLink"> 
 					<i class="icofont-shopping-cart"></i> 
-					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti cart_item_count"> 0 </span>
-					<span>  Ks </span>
+					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti item_cart_count"> 0 </span>
+					<span> {{ 'total' }} Ks </span>
 				</a>
 
-				<a href="shoppingcart.blade.php" class="text-decoration-none d-xl-none d-lg-none d-md-none d-sm-inline-block d-inline-block shoppingcartLink"> 
+				<a href="shoppingcart" class="text-decoration-none d-xl-none d-lg-none d-md-none d-sm-inline-block d-inline-block shoppingcartLink"> 
 					<i class="icofont-shopping-cart"></i>
 					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti "> 1 </span>
 				</a>
-
-				<!-- App Download -->
 
 				<img src="image/download.png" class="img-fluid d-xl-inline d-lg-inline d-md-none d-sm-none d-none" style="width: 150px">
 			</div>

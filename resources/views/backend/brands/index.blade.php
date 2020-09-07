@@ -36,7 +36,12 @@
 			    		<td>
 			    			<a href="#" class="btn btn-primary">Detail</a>
 			    			<a href="{{ route('brands.edit',$brand->id) }}" class="btn btn-secondary">Edit</a>
-			    			<a href="#" class="btn btn-danger">Delete</a>
+
+			    			<form method="post" action="{{ route('brands.destroy',$brand->id) }}">
+			    				@csrf
+			    				@method('DELETE')
+			    			<input type="submit" class="btn btn-danger" value="Delete">
+			    		</form>
 			    		</td>
 		    		</tr>
 		    		@endforeach

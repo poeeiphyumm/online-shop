@@ -86,16 +86,49 @@ Authentication
 
 
 
-GIT
+GIT(upload project into your repo)
 ......
 
--git init
--git add
--git commit -m "message"
--git remote add origin url
--git push -u origin master
+-git init(will crete .git folder)
+-git add .
 
+-git config -global user.name "mama"
+-git config -global user.emal "mama@gmail.com"
+
+-git commit -m "message"
+-git remote add origin https://github.com
+-git push -u origin master
+.............................................
+
+<!-- ၇ေးပီး  git ပေါ်ထပ်တင်တာ -->
+-git status
+-git add .
+-git commit -m "added something"
+-git push -u origin master
+..................................
+
+GIT(clone)
+....
+-git clone url
+-cd folder
+-cp .env.example .env(-)
+-composer install
+-php artisan key:generate
+(.env - database config)
+-php artisan migrate
+-php artisan db:seed
+-npm install
+-npm run dev
+......................................
+
+GIT(team)
+.....
 -git pull
+
+
+
+USER NAME => poeeiphyumm
+PASSWORD => poeeiphyumm1234
 
 
 Spatie 

@@ -39,11 +39,11 @@
 
 					</tbody>
 					<tfoot id="shoppingcart_tfoot">
-						<tr>
+						{{-- <tr>
 							<td colspan="8">
 								<h3 class="text-right"> Total : 46,000 Ks </h3>
 							</td>
-						</tr>
+						</tr> --}}
 						<tr> 
 							<td colspan="5"> 
 								<textarea class="form-control " id="notes" placeholder="Any Request..."></textarea>
