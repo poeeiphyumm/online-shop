@@ -73,7 +73,7 @@
 		<div class="row mt-5 noneshoppingcart_div text-center">
 			
 			<div class="col-12">
-				<h5 class="text-center"> There are no items in this cart </h5>
+				<h5 class="text-center"> </h5>
 			</div>
 
 			<div class="col-12 mt-5 ">

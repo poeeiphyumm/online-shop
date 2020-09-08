@@ -13,4 +13,7 @@ class Category extends Model
     {
     	return $this->hasMany('App\Subcategory');
     }
+    public function items(){
+    	return $this->hasManyThrough('App\Item','App\Subcategory');
+    }
 }

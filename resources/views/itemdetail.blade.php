@@ -17,13 +17,13 @@
 		<nav aria-label="breadcrumb ">
 		  	<ol class="breadcrumb bg-transparent">
 		    	<li class="breadcrumb-item">
-		    		<a href="#" class="text-decoration-none secondarycolor"> Home </a>
+		    		<a href="{{ asset('/home') }}" class="text-decoration-none secondarycolor"> Home </a>
 		    	</li>
 		    	<li class="breadcrumb-item">
-		    		<a href="#" class="text-decoration-none secondarycolor"> Category </a>
+		    		<a href="{{ asset('categories') }}" class="text-decoration-none secondarycolor"> Category </a>
 		    	</li>
 		    	<li class="breadcrumb-item">
-		    		<a href="#" class="text-decoration-none secondarycolor"> Category Name </a>
+		    		<a href="{{ asset('categories') }}" class="text-decoration-none secondarycolor"> Category Name </a>
 		    	</li>
 		    	<li class="breadcrumb-item active" aria-current="page">
 					Subcategory Name
@@ -71,7 +71,7 @@
 				</p>
 
 
-				<a href="#" class="addtocartBtn text-decoration-none">
+				<a href="{{ asset("shoppingcart") }}" class="addtocartBtn text-decoration-none">
 					<i class="icofont-shopping-cart mr-2"></i> Add to Cart
 				</a>
 				

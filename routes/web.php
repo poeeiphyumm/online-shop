@@ -27,6 +27,9 @@ Route::get('register', 'PageController@registerfun')->name('registerpage');
 Route::get('shoppingcart', 'PageController@shoppingcartfun')->name('shoppingcartpage');
 
 Route::get('subcategory/{id}', 'PageController@subcategoryfun')->name('subcategorypage');
+
+
+
 //
 
 
@@ -37,6 +40,7 @@ Route::get('subcategory/{id}', 'PageController@subcategoryfun')->name('subcatego
 Route::get('create', 'BackendController@createfun')->name('createpage');
 
 Route::get('index', 'BackendController@indexfun')->name('indexpage');
+
 
 
 
@@ -71,3 +75,8 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+// Route::get('test',function(){
+// 	return App\subcategory::with('categories')
+// 	->where('category_id')
+// 	->get();
+// });

@@ -45,7 +45,7 @@
 										</ul>
 									</div>
 
-									<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
+									<a href="{{ asset("shoppingcart") }}" class="addtocartBtn text-decoration-none">Add to Cart</a>
 					        	</div>
 					        </div>
 					    </div>

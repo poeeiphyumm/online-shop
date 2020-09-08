@@ -17,7 +17,7 @@
 		<nav aria-label="breadcrumb ">
 		  	<ol class="breadcrumb bg-transparent">
 		    	<li class="breadcrumb-item">
-		    		<a href="#" class="text-decoration-none secondarycolor"> Home </a>
+		    		<a href="/" class="text-decoration-none secondarycolor"> Home </a>
 		    	</li>
 		    	<li class="breadcrumb-item">
 		    		<a href="#" class="text-decoration-none secondarycolor"> Category </a>
@@ -33,21 +33,21 @@
 
 		<div class="row mt-5">
 			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-				<ul class="list-group">
+				<ul class="list-group ">
 				  	<li class="list-group-item">
-				  		<a href="" class="text-decoration-none secondarycolor"> Category One </a>
+				  		<a href="{{ asset('subcategory/1') }}" class="text-decoration-none secondarycolor"> Category One </a>
 				  	</li>
-				  	<li class="list-group-item active">
-				  		<a href="" class="text-decoration-none secondarycolor"> Category Two </a>
-				  	</li>
-				  	<li class="list-group-item">
-				  		<a href="" class="text-decoration-none secondarycolor"> Category Three </a>
+				  	<li class="list-group-item ">
+				  		<a href="{{ asset('subcategory/2') }}" class="text-decoration-none secondarycolor"> Category Two </a>
 				  	</li>
 				  	<li class="list-group-item">
-				  		<a href="" class="text-decoration-none secondarycolor"> Category Four </a>
+				  		<a href="{{ asset('subcategory/3') }}" class="text-decoration-none secondarycolor"> Category Three </a>
 				  	</li>
 				  	<li class="list-group-item">
-				  		<a href="" class="text-decoration-none secondarycolor"> Category Five</a>
+				  		<a href="{{ asset('subcategory/4') }}" class="text-decoration-none secondarycolor"> Category Four </a>
+				  	</li>
+				  	<li class="list-group-item">
+				  		<a href="{{ asset('subcategory/5') }}" class="text-decoration-none secondarycolor"> Category Five</a>
 				  	</li>
 				</ul>
 			</div>	
@@ -57,16 +57,16 @@
 
 				<div class="row">
 					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-						@foreach($subcategories as $subcategory)
+						@foreach($subcategory->items as $item)
 						<div class="card pad15 mb-3">
-						  	<img src="{{ asset($subcategory->photo) }}" class="card-img-top" alt="...">
+						  	<img src="{{ asset($item->photo) }}" class="card-img-top" alt="...">
 						  	
 						  	<div class="card-body text-center">
-						    	<h5 class="card-title text-truncate">Card title</h5>
+						    	<h5 class="card-title text-truncate">{{ $item->name }}</h5>
 						    	
 						    	<p class="item-price">
-		                        	<strike>250,000 Ks </strike> 
-		                        	<span class="d-block">230,000 Ks</span>
+		                        	<strike>{{ $item->price }} Ks </strike> 
+		                        	<span class="d-block">{{ $item->price }} Ks</span>
 		                        </p>
 
 		                        <div class="star-rating">
@@ -79,7 +79,7 @@
 									</ul>
 								</div>
 
-								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
+								<a href="{{ asset("shoppingcart") }}" class="addtocartBtn text-decoration-none">Add to Cart</a>
 						  	</div>
 						</div>
 						@endforeach
@@ -97,13 +97,13 @@
 					      	</a>
 					    </li>
 					    <li class="page-item">
-					    	<a class="page-link" href="#">1</a>
+					    	<a class="page-link" href="{{ asset('subcategory/1') }}">1</a>
 					    </li>
-					    <li class="page-item active">
-					    	<a class="page-link" href="#">2</a>
+					    <li class="page-item ">
+					    	<a class="page-link" href="{{ asset('subcategory/2') }}">2</a>
 					    </li>
 					    <li class="page-item">
-					    	<a class="page-link" href="#">3</a>
+					    	<a class="page-link" href="{{ asset('subcategory/3') }}">3</a>
 					    </li>
 					    <li class="page-item">
 					      	<a class="page-link" href="#">

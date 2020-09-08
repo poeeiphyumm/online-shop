@@ -58,5 +58,6 @@ class PageController extends Controller
         return view('subcategory',compact('subcategory'));
     }
      
+    
 
 }

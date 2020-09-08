@@ -112,7 +112,7 @@
 				<a href="shoppingcart" class="text-decoration-none d-xl-inline d-lg-inline d-md-inline d-sm-none d-none shoppingcartLink"> 
 					<i class="icofont-shopping-cart"></i> 
 					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti item_cart_count"> 0 </span>
-					<span> {{ 'total' }} Ks </span>
+					<span> {{ ('total') }} Ks </span>
 				</a>
 
 				<a href="shoppingcart" class="text-decoration-none d-xl-none d-lg-none d-md-none d-sm-inline-block d-inline-block shoppingcartLink"> 
@@ -141,15 +141,18 @@
 			        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 			          	<li class="dropdown-submenu">
 			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Electronic Devices
+			          			Bella
 			          			<i class="icofont-rounded-right float-right"></i>
 			          		</a>
 				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Electronic Devices
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
+				            	
+				              	<li><a class="dropdown-item" href="foundationbella">Fountation</a></li>
+				              	<li><a class="dropdown-item" href="#">Lipstick</a></li>
+				              	<li><a class="dropdown-item" href="#">Mascara</a></li>
+				              	<li><a class="dropdown-item" href="#">Eyeliner</a></li>
+				              	<li><a class="dropdown-item" href="#">Eye Shadow</a></li>
+				              	<li><a class="dropdown-item" href="#">Powder</a></li>
+
 				              
 				            </ul>
 			          	</li>
@@ -157,15 +160,16 @@
 
 			          	<li class="dropdown-submenu">
 			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Woman Fashion
+			          			l'oreal paris
 			          			<i class="icofont-rounded-right float-right"></i>
 			          		</a>
 				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Woman Fashion
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
+				            	<li><a class="dropdown-item" href="#">Fountation</a></li>
+				              	<li><a class="dropdown-item" href="#">Lipstick</a></li>
+				              	<li><a class="dropdown-item" href="#">Mascara</a></li>
+				              	<li><a class="dropdown-item" href="#">Eyeliner</a></li>
+				              	<li><a class="dropdown-item" href="#">Eye Shadow</a></li>
+				              	<li><a class="dropdown-item" href="#">Powder</a></li>
 				              
 				            </ul>
 			          	</li>
@@ -173,226 +177,20 @@
 
 			          	<li class="dropdown-submenu">
 			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Man Fashion
+			          			Fitme
 			          			<i class="icofont-rounded-right float-right"></i>
 			          		</a>
 				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Man Fashion
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
+				            	<li><a class="dropdown-item" href="foundation">Fountation</a></li>
+				              	<li><a class="dropdown-item" href="#">Lipstick</a></li>
+				              	<li><a class="dropdown-item" href="#">Mascara</a></li>
+				              	<li><a class="dropdown-item" href="#">Eyeliner</a></li>
+				              	<li><a class="dropdown-item" href="#">Eye Shadow</a></li>
+				              	<li><a class="dropdown-item" href="#">Powder</a></li>
 				              
 				            </ul>
 			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Beauty
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Beauty
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Toys
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Toys
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Pets
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Pets
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Sports
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Sports
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Health
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Health
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Smart Home
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Smart Home
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Furniture
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Furniture
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Travel
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Travel
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Kitchen
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Kitchen
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Book
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Book
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Stationery
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Stationery
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Home Decor
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Home Decor
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
-			          	<div class="dropdown-divider"></div>
-
-			          	<li class="dropdown-submenu">
-			          		<a class="dropdown-item" href="javascript:void(0)">
-			          			Baby Care
-			          			<i class="icofont-rounded-right float-right"></i>
-			          		</a>
-				            <ul class="dropdown-menu">
-				            	<h6 class="dropdown-header">
-				            		Baby Care
-				            	</h6>
-				              	<li><a class="dropdown-item" href="#">Submenu</a></li>
-				              	<li><a class="dropdown-item" href="#">Submenu0</a></li>
-				              
-				            </ul>
-			          	</li>
+			          	
 
 			        </ul>
         		</div>
@@ -520,7 +318,7 @@
 			</div>
 			<hr>
 
-			<a href="#"> Login | Signup</a>
+			<a href="register"> Login | Signup</a>
 			<hr>
 
 			<a href="#"> Cart [ <span class="cartNoti"> 1 </span> ]  </a>
