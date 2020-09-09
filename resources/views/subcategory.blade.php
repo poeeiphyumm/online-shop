@@ -79,7 +79,7 @@
 									</ul>
 								</div>
 
-								<a href="{{ asset("shoppingcart") }}" class="addtocartBtn text-decoration-none">Add to Cart</a>
+								<a href="" class="addtocartBtn text-decoration-none" data-id="{{ $item->id }}" data-name="{{ $item->name }}" data-code="{{ $item->code }}" data-price="{{ $item->price }}" data-discount="{{ $item->discount }}" data-img="{{ $item->photo }}">Add to Cart</a>
 						  	</div>
 						</div>
 						@endforeach

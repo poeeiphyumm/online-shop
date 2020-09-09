@@ -74,6 +74,10 @@ Route::get('loginform', 'PageController@loginfun')->name('loginpage');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/shop','BladeController@shop');
+
+Route::get('/product','BladeController@product');
+
 
 // Route::get('test',function(){
 // 	return App\subcategory::with('categories')

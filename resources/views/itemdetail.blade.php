@@ -71,7 +71,7 @@
 				</p>
 
 
-				<a href="{{ asset("shoppingcart") }}" class="addtocartBtn text-decoration-none">
+				<a href="{{ asset("shoppingcart") }}" class="addtocartBtn text-decoration-none" data-id="{{ $item->id }}" data-name="{{ $item->name }}" data-code="{{ $item->code }}" data-price="{{ $item->price }}" data-discount="{{ $item->discount }}" data-img="{{ $item->photo }}">
 					<i class="icofont-shopping-cart mr-2"></i> Add to Cart
 				</a>
 				
